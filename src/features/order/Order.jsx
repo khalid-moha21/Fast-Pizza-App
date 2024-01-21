@@ -1,6 +1,6 @@
 // Test ID: IIDSAT
 
-import OrderItem from "./OrderItem";
+import { useEffect } from "react";
 import { useFetcher, useLoaderData } from "react-router-dom";
 import { getOrder } from "../../services/apiRestaurant";
 import {
@@ -8,7 +8,8 @@ import {
   formatCurrency,
   formatDate,
 } from "../../utils/helpers";
-import { useEffect } from "react";
+
+import OrderItem from "./OrderItem";
 
 function Order() {
   // Everyone can search for all orders, so for privacy reasons we're gonna gonna exclude names or address, these are only for the restaurant staff

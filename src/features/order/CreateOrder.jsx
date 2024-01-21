@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
-import { createOrder } from "../../services/apiRestaurant";
-import Button from "../../ui/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { clearCart, getCart, getTotalCartPrice } from "../cart/cartSlice";
-import EmptyCart from "../cart/EmptyCart";
-import store from "../../store";
-import { formatCurrency } from "../../utils/helpers";
+import { Form, redirect, useActionData, useNavigation } from "react-router-dom";
+
+import { createOrder } from "../../services/apiRestaurant";
 import { fetchAddress } from "../user/userSlice";
-import { isValidPhone } from "../../utils/helpers";
+import { clearCart, getCart, getTotalCartPrice } from "../cart/cartSlice";
+import { formatCurrency, isValidPhone } from "../../utils/helpers";
+import store from "../../store";
+
+import Button from "../../ui/Button";
+import EmptyCart from "../cart/EmptyCart";
 
 function CreateOrder() {
   const [withPriority, setWithPriority] = useState(false);
