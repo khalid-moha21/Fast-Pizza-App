@@ -1,7 +1,5 @@
 // Test ID: IIDSAT
 
-/* import { useNavigation } from "react-router-dom";
-import Spinner from "../../ui/Spinner"; */
 import OrderItem from "./OrderItem";
 import { useFetcher, useLoaderData } from "react-router-dom";
 import { getOrder } from "../../services/apiRestaurant";

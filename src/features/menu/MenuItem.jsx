@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import Button from "../../ui/button";
+import Button from "../../ui/Button";
 import { formatCurrency } from "../../utils/helpers";
 import { addItem } from "../cart/cartSlice";
 import { deleteItem, getCurrentQuantityById } from "../cart/cartSlice";
