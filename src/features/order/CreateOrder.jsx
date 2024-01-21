@@ -21,7 +21,6 @@ function CreateOrder() {
     address,
     error: locationError,
   } = useSelector((store) => store.user);
-  console.log(Object.keys(position).length);
 
   const isLoadingAddress = addressStatus === "loading";
 
