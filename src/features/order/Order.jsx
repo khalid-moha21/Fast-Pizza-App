@@ -36,7 +36,9 @@ function Order() {
   return (
     <div className="space-y-6 px-4 py-8">
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h2 className="text-xl font-semibold">Order # {id} status</h2>
+        <h2 className="text-xl font-semibold">
+          ✅ Order # {id} confirmed! It's on its way.
+        </h2>
         <div className=" space-x-2">
           {priority && (
             <span className="rounded-full bg-red-500 px-3 py-1 text-sm font-semibold tracking-wide text-red-50">
