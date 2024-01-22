@@ -20,6 +20,16 @@ function Home() {
       ) : (
         <CreateUser />
       )}
+
+      <a
+        href="https://github.com/khalid-moha21/Fast-Pizza-App"
+        target="_blank"
+        rel="noreferrer"
+        className="mt-32 text-blue-500 hover:text-blue-700"
+      >
+        &#128279;
+        <span className="underline hover:underline-offset-4">Github</span>
+      </a>
     </div>
   );
 }
