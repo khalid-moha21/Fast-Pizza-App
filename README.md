@@ -15,3 +15,5 @@
 3, Tailwind CSS for styling
 3, Setting up proffesional features based file structure
 4, Interacting with API
+
+Link: https://fastpiz.netlify.app/
